@@ -98,10 +98,10 @@ export default function BannerSlider() {
 
 
               <div className="bg-white/50 rounded-2xl md:rounded-3xl p-4 md:p-6 mb-6 md:mb-8 border border-white shadow-sm">
-                 <h3 className="font-mono text-[10px] md:text-xs text-cobalt font-bold mb-2 uppercase flex items-center gap-2">
+                 {/* <h3 className="font-mono text-[10px] md:text-xs text-cobalt font-bold mb-2 uppercase flex items-center gap-2">
                     <span className="w-1 h-3 md:h-4 bg-cobalt rounded-full"></span> Tech Spec
-                 </h3>
-                 <p className="text-lg md:text-xl text-ink font-bold mb-2">{slides[current].spec}</p>
+                 </h3> */}
+                 {/* <p className="text-lg md:text-xl text-ink font-bold mb-2">{slides[current].spec}</p> */}
                  <p className="text-stone-500 text-xs md:text-sm leading-relaxed">{slides[current].desc}</p>
               </div>
 
