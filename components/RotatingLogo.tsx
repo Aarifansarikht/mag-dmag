@@ -20,7 +20,7 @@ const LOGOS = [
     label: "DMAG",
     location: "Dubai, UAE",
     className: "contrast-200 ",
-    scale: 1.25,
+    scale: 1,
   },
 ];
 
