@@ -44,35 +44,28 @@ function RotatingLogo({ footer = false }: RotatingLogoProps) {
   const logo = LOGOS[index];
 
   return (
-<div
-  className={cn(
-    "flex whitespace-nowrap",
-    footer
-      ? "flex-col items-center gap-3"
-      : "flex-row items-end gap-3 justify-start"
-  )}
->
-
+    <div
+      className={cn(
+        "flex whitespace-nowrap",
+        footer ? "flex-col items-center gap-3" : "flex-row items-end gap-3 justify-start",
+      )}
+    >
       {/* Logo */}
-   <div
-  className={cn(
-    "relative overflow-hidden",
-    footer
-      ? "w-[200px] h-[90px]"
-      : "w-[140px] md:w-[200px] h-[44px] md:h-[64px]"
-  )}
->
-
+      <div
+        className={cn(
+          "relative overflow-hidden",
+          footer ? "w-[200px] h-[90px]" : "w-[140px] md:w-[200px] h-[44px] md:h-[64px]",
+        )}
+      >
         <AnimatePresence mode="wait">
           <motion.div
             key={logo.id}
             initial={{ opacity: 0, y: 24, scale: 0.95 }}
-        animate={{
-  opacity: 1,
-  y: 0,
-  scale: footer ? 1 : logo.scale ?? 1,
-}}
-
+            animate={{
+              opacity: 1,
+              y: 0,
+              scale: footer ? 1 : (logo.scale ?? 1),
+            }}
             exit={{ opacity: 0, y: -24, scale: 0.95 }}
             transition={{
               duration: footer ? 0.9 : 0.7,
@@ -92,10 +85,7 @@ function RotatingLogo({ footer = false }: RotatingLogoProps) {
       </div>
 
       {/* Location */}
-      {/* Location */}
-    {/* Location */}
-{/* Location */}
-<AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
   <motion.div
     key={logo.id + "-text"}
     initial={{ opacity: 0, y: 6 }}
@@ -103,26 +93,19 @@ function RotatingLogo({ footer = false }: RotatingLogoProps) {
     exit={{ opacity: 0, y: -6 }}
     transition={{ duration: 0.4 }}
     className={cn(
-      // SAME structure for header & footer
-      "flex items-center gap-2 uppercase font-medium leading-none",
+      "flex items-baseline gap-2 uppercase font-medium leading-tight",
       footer
         ? "text-[11px] tracking-[0.35em] text-white/80"
         : "text-[13px] tracking-[0.25em] text-tech-500"
     )}
   >
-    {/* Dot INLINE before city */}
-    <span
-      className={cn(
-        "inline-block rounded-full bg-brand shrink-0",
-        footer ? "w-1.5 h-1.5" : "w-1.5 h-1.5"
-      )}
-    />
+    {/* Gold Dot */}
+    <span className="inline-block w-1.5 h-1.5 rounded-full bg-brand shrink-0 translate-y-[-1px]" />
 
-    {/* City */}
+    {/* Location */}
     <span className="text-black">{logo.location}</span>
   </motion.div>
 </AnimatePresence>
-
 
     </div>
   );
