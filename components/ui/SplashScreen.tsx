@@ -26,14 +26,14 @@ export default function SplashScreen() {
           </div>
 
     
-          <div className="flex flex-col items-center">
+          {/* <div className="flex flex-col items-center">
             <span className="text-6xl font-display font-black tracking-tighter text-white uppercase italic leading-none">
               MAG
             </span>
             <span className="text-xl font-bold text-brand-accent uppercase tracking-[0.4em] leading-none mt-2">
               ENGINEERING
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
