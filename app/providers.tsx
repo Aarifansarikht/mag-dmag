@@ -20,7 +20,7 @@ export function Providers({ children }: React.PropsWithChildren) {
       const timer = setTimeout(() => {
         setShowSplash(false);
         sessionStorage.setItem("runraw_splash_seen", "true");
-      }, 2400); // Slightly less than 2.5s to ensure clean cut
+      }, 5000); 
 
       return () => clearTimeout(timer);
     }
