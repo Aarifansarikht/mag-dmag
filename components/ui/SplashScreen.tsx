@@ -16,7 +16,7 @@ export default function SplashScreen() {
        
           <div className=" p-6 shadow-lg">
             <Image
-              src="/images/splash_logo.png"
+              src="/images/splash_logo.webp"
               alt="MAG Engineering Logo"
               width={160} 
               height={160}
