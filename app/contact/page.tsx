@@ -55,7 +55,7 @@ export default function ContactPage() {
                         </div>
                         <div className="flex gap-4">
                           <Mail size={16} className="text-cobalt shrink-0" />
-                          <span>m.adnanghani@maggulf.com</span>
+                          <span>sales1@maggulf.com</span>
                         </div>
                       </div>
                     </div>

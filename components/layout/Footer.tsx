@@ -69,11 +69,11 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:m.adnanghani@maggulf.com"
+                href="mailto:sales1@maggulf.com"
                 className="flex items-center gap-4 text-black/80 hover:text-brand-gold transition-colors text-xs"
               >
                 <Mail className="w-4 h-4 text-brand-gold" />
-                <span>m.adnanghani@maggulf.com</span>
+                <span>sales1@maggulf.com</span>
               </a>
             </div>
           </div>
