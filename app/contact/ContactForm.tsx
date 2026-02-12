@@ -56,7 +56,7 @@ ${form.message}
           <div className="h-10 w-10 bg-cobalt/10 rounded-xl flex items-center justify-center text-cobalt">
             <MessageSquare size={20} />
           </div>
-          <h3 className="text-2xl font-bold text-ink">Send an Enquiry</h3>
+          <h3 className="text-2xl font-bold text-ink">Send Your Invoice</h3>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -145,7 +145,7 @@ ${form.message}
             disabled={loading}
             className="w-full h-16 rounded-xl bg-ink text-white hover:bg-cobalt shadow-xl transition-all"
           >
-            {loading ? "Sending..." : "Send Message"}
+            {loading ? "Sending..." : "Send"}
           </Button>
         </form>
       </div>
