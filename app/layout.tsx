@@ -30,10 +30,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.maggroup.com"),
 
   title: {
-    default:
-      "MAG & DMAG | Drainage Accessories & Steel Fabrication Manufacturer in Qatar & UAE",
-    template:
-      "%s | MAG & DMAG Industrial Manufacturing Group",
+    default: "MAG & DMAG | Drainage Accessories & Steel Fabrication Manufacturer in Qatar & UAE",
+    template: "%s | MAG & DMAG Industrial Manufacturing Group",
   },
 
   description:
@@ -61,8 +59,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "MAG & DMAG | Drainage Accessories & Steel Fabrication Manufacturer",
+    title: "MAG & DMAG | Drainage Accessories & Steel Fabrication Manufacturer",
     description:
       "Manufacturer of drainage accessories, manhole covers, and custom steel fabrication systems in Qatar & UAE serving GCC infrastructure projects.",
     url: "https://www.maggroup.com",
@@ -81,10 +78,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "MAG & DMAG | Drainage & Steel Fabrication Manufacturer",
-    description:
-      "Leading GCC manufacturer of drainage accessories and custom steel fabrication systems.",
+    title: "MAG & DMAG | Drainage & Steel Fabrication Manufacturer",
+    description: "Leading GCC manufacturer of drainage accessories and custom steel fabrication systems.",
     images: ["/favicon-32x32.png"],
   },
 
@@ -117,9 +112,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           selection:text-cobalt-900
         `}
       >
-        <Header />
-        <Providers>{children}</Providers>
-        <Footer />
+        <Providers>
+          <Header />
+
+          {children}
+
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
