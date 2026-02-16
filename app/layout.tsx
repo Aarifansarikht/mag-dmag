@@ -114,9 +114,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       >
         <Providers>
           <Header />
-
           {children}
-
           <Footer />
         </Providers>
       </body>

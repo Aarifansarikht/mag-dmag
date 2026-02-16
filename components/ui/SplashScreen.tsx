@@ -17,7 +17,7 @@ export default function SplashScreen() {
               width={160} 
               height={160}
               priority
-              className="object-contain invert"
+              className="object-contain "
             />
           </div>
 
